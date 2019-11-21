@@ -1,0 +1,35 @@
+@import "./_appwork/include";
+@import "./_theme/common";
+@import "./_theme/libs";
+@import "./_theme/uikit";
+
+$primary-color: #1AA4C9;
+$body-bg: #FEFEFE;
+
+body {
+  background: $body-bg;
+}
+
+.bg-body {
+  background: $body-bg !important;
+}
+
+@include appwork-common-theme($primary-color);
+@include appwork-libs-theme($primary-color);
+@include appwork-uikit-theme($primary-color);
+
+// Navbar
+
+@include appwork-navbar-variant('.bg-navbar-theme', #FEFEFE, $color: $text-muted, $active-color: $body-color);
+
+.layout-navbar {
+  box-shadow: 0 1px 0 $border-color;
+}
+
+// Sidenavs
+
+@include appwork-sidenav-variant('.bg-sidenav-theme', #494C54, $color: #FEFEFE);
+
+// Footer
+
+@include appwork-footer-variant('.bg-footer-theme', #FEFEFE, $color: $text-muted, $active-color: $body-color);
