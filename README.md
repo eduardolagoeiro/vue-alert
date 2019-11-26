@@ -1,5 +1,24 @@
 # vue-alert
 
+
+```
+npm i px-vue-alert
+```
+
+
+
+### add in main.js
+
+
+## template
+
+```
+import PxVueAlert from 'px-vue-alert'
+Vue.use(PxVueAlert, { store })
+```
+
+
+
 ### add in app.vue
 
 
