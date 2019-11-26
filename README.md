@@ -30,7 +30,7 @@ Vue.use(PxVueAlert, { store })
 	<div id="app">
 		<router-view/>
 		<px-block-page/>
-		<px-notifications spinnerImageSrc="./icone_transparente.png"/>
+		<px-toast-notify spinnerImageSrc="./icone_transparente.png"/>
 	</div>
 </template>
 ```
