@@ -1,5 +1,9 @@
 # vue-alert
 
+
+vuex required
+
+
 ## install
 
 ```
@@ -26,7 +30,7 @@ Vue.use(PxVueAlert, { store })
 	<div id="app">
 		<router-view/>
 		<px-block-page/>
-		<px-notifications/>
+		<px-notifications spinnerImageSrc="./icone_transparente.png"/>
 	</div>
 </template>
 ```

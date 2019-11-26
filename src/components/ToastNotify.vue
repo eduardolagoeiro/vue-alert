@@ -5,16 +5,10 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import Notifications from 'vue-notification'
-import Toasted from 'vue-toasted'
 import { mapState, mapActions } from 'vuex'
 
-Vue.use(Notifications)
-Vue.use(Toasted)
-
 export default {
-	name: 'ui-notifications',
+	name: 'toast-notify',
 	data: () => ({
 		toastActions: false,
 		toastStyle: 'bubble',
@@ -79,10 +73,6 @@ export default {
 }
 </script>
 
-<style src="../../vendor/libs/vue-notification/vue-notification.scss" lang="scss"></style>
-<style src="../../vendor/libs/vue-toasted/vue-toasted.scss" lang="scss"></style>
-
-<!-- Custom template animation -->
 <style>
 	.v-fade-left-enter-active,
 	.v-fade-left-leave-active,

@@ -5,7 +5,7 @@
 				<i id="block-icon" :class="block.icon"></i>
 			</div>
 			<div v-else-if="loading" id="spinner">
-				<img id="prlx-icon" src="../assets/logo/icone_transparente.png" alt="Logo Parcelex">
+				<img id="prlx-icon" :src="spinnerImageSrc">
 			</div>
 		</BlockUI>
   </div>
@@ -16,6 +16,7 @@ import { mapState } from 'vuex'
 
 export default {
 	name: 'block-page',
+	props: ['spinnerImageSrc'],
 	computed: {
 		...mapState('alert', ['loading', 'block']),
 		message () {
@@ -26,8 +27,6 @@ export default {
 	}
 }
 </script>
-
-<style src="../../vendor/libs/spinkit/spinkit.scss" lang="scss"></style>
 
 <style>
   .loading-container .loading-backdrop {
