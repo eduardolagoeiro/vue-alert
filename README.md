@@ -29,8 +29,8 @@ Vue.use(PxVueAlert, { store })
 <template>
 	<div id="app">
 		<router-view/>
-		<px-block-page/>
-		<px-toast-notify spinnerImageSrc="./icone_transparente.png"/>
+		<px-block-page spinnerImageSrc="./icone_transparente.png"/>
+		<px-toast-notify/>
 	</div>
 </template>
 ```

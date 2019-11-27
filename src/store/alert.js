@@ -43,9 +43,13 @@ const mutations = {
 		state.block = null
 		state.loading = null
 	},
-	toggleLoading (state, { message }) {
-		if (state.loading) state.loading = null
-		else state.loading = { message }
+	toggleLoading (state, data = {}) {
+		if (state.loading) {
+			state.loading = null
+		} else {
+			const { message } = data
+			state.loading = { message: message || 'loading' }
+		}
 	},
 	blockMessage (state, { message, icon, type, delay }) {
 		state.loading = null
