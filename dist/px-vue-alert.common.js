@@ -3784,6 +3784,7 @@ module.exports = document && document.documentElement;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
@@ -3887,7 +3888,7 @@ var store = {
   mutations: mutations
 };
 /* harmony default export */ var store_alert = (store);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47fc1305-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/BlockPage.vue?vue&type=template&id=a061aec6&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"763c4f5f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/BlockPage.vue?vue&type=template&id=a061aec6&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.message)?_c('BlockUI',{attrs:{"message":_vm.message}},[(_vm.block)?_c('div',{class:_vm.block.type ? ("text-" + (_vm.block.type)) : 'text-primary'},[_c('i',{class:_vm.block.icon,attrs:{"id":"block-icon"}})]):(_vm.loading)?_c('div',{attrs:{"id":"spinner"}},[_c('img',{attrs:{"id":"prlx-icon","src":_vm.spinnerImageSrc}})]):_vm._e()]):_vm._e()],1)}
 var staticRenderFns = []
 
@@ -4090,12 +4091,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var BlockPage = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47fc1305-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ToastNotify.vue?vue&type=template&id=b1863658&
-var ToastNotifyvue_type_template_id_b1863658_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('notifications',{attrs:{"group":"notifications-default","position":"top left"}})],1)}
-var ToastNotifyvue_type_template_id_b1863658_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"763c4f5f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ToastNotify.vue?vue&type=template&id=506bc07d&
+var ToastNotifyvue_type_template_id_506bc07d_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('notifications',{attrs:{"group":"notifications-default","position":"top left"}})],1)}
+var ToastNotifyvue_type_template_id_506bc07d_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/ToastNotify.vue?vue&type=template&id=b1863658&
+// CONCATENATED MODULE: ./src/components/ToastNotify.vue?vue&type=template&id=506bc07d&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ToastNotify.vue?vue&type=script&lang=js&
 
@@ -4152,7 +4153,7 @@ function ToastNotifyvue_type_script_lang_js_objectSpread(target) { for (var i = 
       return this.alert.message;
     },
     showToast: function showToast() {
-      if (!this.alert.message || !this.alert.type) return;
+      if (!this.alert || !this.alert.message || !this.alert.type) return;
       var toastText = this.getToastText();
       var actions = [{
         text: 'Cancel',
@@ -4195,8 +4196,8 @@ var ToastNotifyvue_type_style_index_0_lang_css_ = __webpack_require__("1b8e");
 
 var ToastNotify_component = normalizeComponent(
   components_ToastNotifyvue_type_script_lang_js_,
-  ToastNotifyvue_type_template_id_b1863658_render,
-  ToastNotifyvue_type_template_id_b1863658_staticRenderFns,
+  ToastNotifyvue_type_template_id_506bc07d_render,
+  ToastNotifyvue_type_template_id_506bc07d_staticRenderFns,
   false,
   null,
   null,
