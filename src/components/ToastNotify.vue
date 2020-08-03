@@ -44,7 +44,7 @@ export default {
 			return this.alert.message
 		},
 		showToast () {
-			if (!this.alert.message || !this.alert.type) return
+			if (!this.alert || !this.alert.message || !this.alert.type) return
 			const toastText = this.getToastText()
 			const actions = [{
 				text: 'Cancel',
